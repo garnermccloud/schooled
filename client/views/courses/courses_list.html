@@ -1,0 +1,10 @@
+<template name="coursesList">
+  <h2 style="text-align: center">{{currentUser.username}}'s Courses</h2>
+
+  {{> courseAdd }}
+  <div class="tasks">
+    {{#each courses}}
+      {{> courseItem}}
+    {{/each}}
+  </div>
+</template>

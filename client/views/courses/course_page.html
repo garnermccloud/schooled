@@ -1,0 +1,13 @@
+<template name="coursePage">
+  {{> courseItem}}
+  <ul class="comments">
+    {{#each tasks}}
+    {{> task}}
+    {{/each}}
+  </ul>
+  {{#if currentUser}}
+  {{> taskSubmit}}
+  {{else}}
+  <p>Please log in to add a task.</p>
+  {{/if}}
+</template>

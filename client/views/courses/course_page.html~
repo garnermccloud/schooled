@@ -1,0 +1,8 @@
+<template name="coursePage">
+  {{> courseItem}}
+  <ul class="comments">
+    {{#each tasks}}
+    {{> task}}
+    {{/each}}
+  </ul>
+</template>

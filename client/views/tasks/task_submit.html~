@@ -1,0 +1,22 @@
+<template name="commentSubmit">
+  <h3>Add New Task</h3>
+  <form name="comment" class="comment-form">
+    <div class="control-group">
+      <label class="control-label" for="title">Title</label>
+      <div class="controls">
+        <input name="title" type="text" value="" placeholder="Name your task" maxlength="100"/>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="dueDate">Due Date</label>
+      <div class="controls">
+        <input name="dueDate" type="date" value=""/>
+      </div>
+    </div> 
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn">Add Task</button>
+        </div>
+    </div>
+  </form>
+</template>

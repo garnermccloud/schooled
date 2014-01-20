@@ -1,0 +1,7 @@
+Meteor.publish('courses', function() {
+    return Courses.find();
+});
+
+Meteor.publish('tasks', function(courseId) {
+    return Tasks.find({courseId:courseId});
+});

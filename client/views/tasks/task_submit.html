@@ -1,0 +1,38 @@
+<template name="taskSubmit">
+  
+  <form name="comment" class="comment-form">
+    <h3>Add New Task</h3>  
+    <div class="control-group">
+      <label class="control-label" for="title">Title</label>
+      <div class="controls">
+        <input name="title" type="text" value="" placeholder="Homework 1" maxlength="100"/>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="dueDate">Due Date</label>
+      <div class="controls">
+        <input name="dueDate" type="date" value=""/>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="percentOfGrade">Percent of Grade</label>
+      <div class="controls">
+        <input name="percentOfGrade" type="text" value="" maxlength="50"/>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">Type</label>
+      <div class="controls">
+        <input name="taskType" type="radio" value="test" /> Test <br>
+	<input name="taskType" type="radio" value="assignment" /> Assignment
+      </div>
+    </div>
+
+    
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn">Add Task</button>
+        </div>
+    </div>
+  </form>
+</template>

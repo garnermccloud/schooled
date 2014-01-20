@@ -1,0 +1,20 @@
+Template.courseSubmit.events({
+    'submit form': function(e) {
+	e.preventDefault();
+	
+	var course = {
+            title: $(e.target).find('[name=title]').val(),
+	}
+	Meteor.call('submitCourse', course, function(error, id) {
+	    if (error) {
+		// display the error to the user
+		throwError(error.reason);
+		if (error.error === 302)
+		    Router.go('coursePage', {_id: error.details})
+	    } else {
+		Router.go('coursePage', {_id: id});
+	    }	    
+	});
+    }
+    
+});

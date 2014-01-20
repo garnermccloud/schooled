@@ -1,0 +1,14 @@
+<template name="courseItem">
+  <div class="task">
+    <div class="task-content">
+      <h3><a href="{{pathFor 'coursePage'}}">{{title}}</a></h3>
+      {{#if ownCourse}}<a href="{{pathFor 'courseEdit'}}">Edit</a>{{/if}}
+      <a href="#" id="removeCourse">Remove</a>
+      <p>
+        submitted by {{username}},
+	<a href="{{pathFor 'coursePage'}}">{{tasksCount}} tasks</a>
+
+      </p>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,15 @@
+<head>
+  <title>Classmate</title>
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="/">Classmate</a>
+      </div>
+    </header>
+    <div id="main" class="row-fluid">
+      {{> tasksList}}
+    </div>
+  </div>
+</body>

@@ -1,0 +1,8 @@
+<template name="coursesList">
+  {{> courseAdd }}
+  <div class="tasks">
+    {{#each courses}}
+      {{> courseItem}}
+    {{/each}}
+  </div>
+</template>

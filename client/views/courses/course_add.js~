@@ -1,0 +1,14 @@
+Template.courseAdd.rendered = function() {
+    $('#courseTypeahead').typeahead({
+	name:'searchCourses',
+	local: coursesData(),
+    });
+}
+
+var coursesData = function() {
+    var data = [];
+    Courses.find().forEach(function(course) {
+	data.push(course.title);
+    });
+    return data;
+}
