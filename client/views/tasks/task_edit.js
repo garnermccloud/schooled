@@ -12,23 +12,10 @@ Template.taskEdit.helpers({
 	var dateISO = new Date(this.commits[newestIndex].dueDate).toISOString().substring(0, 10);
 	return dateISO;
     },
-    taskTypeTest: function() {
+    taskNotes: function() {
         var newestIndex = this.commits.length - 1;
-	return (this.commits[newestIndex].type == taskType.TEST) ? "checked" : "";
+        return this.commits[newestIndex].notes;
     },
-    taskTypeAssignment: function() {
-        var newestIndex = this.commits.length - 1;
-        return (this.commits[newestIndex].type == taskType.ASSIGNMENT) ? "checked" : "";
-    },
-
-    
-    taskPercentOfGrade: function() {
-        var newestIndex = this.commits.length - 1;
-        return this.commits[newestIndex].percentOfGrade;
-    },
-
-
-
 });
 
 
@@ -39,14 +26,12 @@ Template.taskEdit.events({
 	
         var $title = $(e.target).find('[name=title]');
         var $dueDate =  $(e.target).find('[name=dueDate]');
-        var $percentOfGrade =  $(e.target).find('[name=percentOfGrade]');
-        var $type =  $(e.target).find('[name=taskType]').filter(":checked");
+        var $notes =  $(e.target).find('[name=notes]');
 	var task = {
 	    _id: template.data._id,
             title: $title.val(),
             dueDate: new Date($dueDate.val()).getTime(),
-            percentOfGrade: $percentOfGrade.val(),
-            type: $type.val(),
+            notes: $notes.val(),
         };
 
 	Meteor.call('updateTask', task, function(error, taskId) {

@@ -11,13 +11,9 @@ Template.task.helpers({
         var newestIndex = this.commits.length - 1;
         return new Date(this.commits[newestIndex].dueDate);
     },
-    taskType: function() {
+    taskNotes: function() {
         var newestIndex = this.commits.length - 1;
-        return (this.commits[newestIndex].type == taskType.TEST) ? "Test" : "Assignment";
-    },
-    taskPercentOfGrade: function() {
-        var newestIndex = this.commits.length - 1;
-        return this.commits[newestIndex].percentOfGrade;
+        return this.commits[newestIndex].notes;
     },
     taskUsername: function() {
         var newestIndex = this.commits.length - 1;

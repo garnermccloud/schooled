@@ -4,14 +4,12 @@ Template.taskSubmit.events({
 	
 	var $title = $(e.target).find('[name=title]');
 	var $dueDate =  $(e.target).find('[name=dueDate]');
-	var $percentOfGrade =  $(e.target).find('[name=percentOfGrade]');
-	var $type =  $(e.target).find('[name=taskType]').filter(":checked");
+	var $notes =  $(e.target).find('[name=notes]');
 
 	var task = {
 	    title: $title.val(),
 	    dueDate: new Date($dueDate.val()).getTime(),
-	    percentOfGrade: $percentOfGrade.val(),
-	    type: $type.val(),
+	    notes: $notes.val(),
 	    courseId: template.data._id
     };
 
@@ -21,8 +19,7 @@ Template.taskSubmit.events({
       } else {
           $title.val('');
 	  $dueDate.val('');
-	  $percentOfGrade.val('');
-	  $type.val('');
+	  $notes.val('');
       }
     });
   }

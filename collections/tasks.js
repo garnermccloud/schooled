@@ -26,11 +26,10 @@ Meteor.methods({
 		{
 		    title: taskAttributes.title,
 		    userId: user._id,
-		    username: user.username,
+		    username: user.emails[0].address,
 		    submittedDate: new Date().getTime(),
-		    type: (taskAttributes.type == 'test') ? taskType.TEST : taskType.ASSIGNMENT,
 		    dueDate: taskAttributes.dueDate,
-		    percentOfGrade: taskAttributes.percentOfGrade
+		    notes: taskAttributes.notes,
 		}	    
 	    ]
 	}
@@ -55,13 +54,12 @@ Meteor.methods({
 
         
         var commit = {
-                    title: taskAttributes.title,
-                    userId: user._id,
-                    username: user.username,
-                    submittedDate: new Date().getTime(),
-                    type: (taskAttributes.type == 'test') ? taskType.TEST : taskType.ASSIGNMENT,
-                    dueDate: taskAttributes.dueDate,
-                    percentOfGrade: taskAttributes.percentOfGrade
+            title: taskAttributes.title,
+            userId: user._id,
+            username: user.emails[0].address,
+            submittedDate: new Date().getTime(),
+            dueDate: taskAttributes.dueDate,
+	    notes: taskAttributes.notes,
         };
 
             

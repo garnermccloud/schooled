@@ -41,7 +41,7 @@ Meteor.methods({
 	// pick out the whitelisted keys
 	var course = _.extend(_.pick(courseAttributes,'title'), {
 	    userId: user._id, 
-	    username: user.username, 
+	    username: user.emails[0].address, 
 	    submittedDate: new Date().getTime(),
 	    tasksCount: 0
 	});
