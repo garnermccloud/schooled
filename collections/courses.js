@@ -43,11 +43,22 @@ Meteor.methods({
 	    userId: user._id, 
 	    username: user.emails[0].address, 
 	    submittedDate: new Date().getTime(),
-	    tasksCount: 0
+	    tasksCount: 0,
+	    school: user.school
 	});
 	
 	var courseId = Courses.insert(course);
 	
+	Meteor.users.update(
+            user._id,
+            {
+                $push: {
+                    courses: courseId
+                }
+            }
+        );
+	
+
 	return courseId;
   
   },

@@ -6,18 +6,19 @@
       "spin": {},
       "accounts-ui-bootstrap-dropdown": {},
       "iron-router-progress": {},
-      "typeahead-js": {}
+      "typeahead": {},
+      "houston": {}
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.6.1",
-        "commit": "4e1ee0581d68bff422a915dacb0bd30eae10fe08"
+        "tag": "v0.6.2",
+        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
       },
       "spin": {
         "git": "https://github.com/SachaG/meteor-spin.git",
-        "tag": "v0.2.0",
-        "commit": "fd3a2871a69442848b4b4e74f5e1ae28fa4a95a4"
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
       "accounts-ui-bootstrap-dropdown": {
         "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
@@ -29,10 +30,20 @@
         "tag": "v0.2.0",
         "commit": "ce730d1d26feadb7c75ea25f22c5bfdb0c549a8b"
       },
-      "typeahead-js": {
-        "git": "https://github.com/olragon/meteor-typeahead-js.git",
-        "tag": "v0.9.3",
-        "commit": "9241c6c68f39cf37699b5de7b03d60a5434a5d21"
+      "typeahead": {
+        "git": "https://github.com/sergeyt/meteor-typeahead.git",
+        "tag": "v0.0.2",
+        "commit": "e4373dcf01a28c000ec5782bfd85202182021e96"
+      },
+      "houston": {
+        "git": "https://github.com/gterrono/meteor-admin-ui.git",
+        "tag": "v1.0.0",
+        "commit": "e98660af09cb3e4e90848abfe943a06e7068cccc"
+      },
+      "paginated-subscription": {
+        "git": "https://github.com/tmeasday/meteor-paginated-subscription.git",
+        "tag": "v0.1.2",
+        "commit": "35e0c6112df2b4cfeb60b559276a93cac5ee2dd6"
       }
     }
   }

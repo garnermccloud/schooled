@@ -1,5 +1,11 @@
 Meteor.publish('courses', function() {
-    return Courses.find();
+    var user = Meteor.users.findOne(this.userId);
+    var school;
+    if (user) {
+	school = user.school;
+    }
+    return Courses.find({school:school});
+    
 });
 
 Meteor.publish('tasks', function(courseId) {
@@ -12,7 +18,8 @@ Meteor.publish('currentUser', function() {
 	this.userId, 
 	{
 	    fields: {
-		courses: 1
+		courses: 1,
+		school: 1
 	    }
 	}
     );
