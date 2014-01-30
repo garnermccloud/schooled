@@ -1,76 +1,17 @@
-/* Fixture data 
+var princetonCourseString = Assets.getText('schoolsCourseData/princetonUniversity/spring2014.txt');
+var princetonCourses = princetonCourseString.split(",");
+
+ 
 if (Courses.find().count() === 0) {
-    var now = new Date().getTime();
-    
-    // create two users
-    var tomId = Meteor.users.insert({
-	profile: { name: 'Tom Coleman' }
-    });
-    var tom = Meteor.users.findOne(tomId);
-    var sachaId = Meteor.users.insert({
-	profile: { name: 'Sacha Greif' }
-    });
-    var sacha = Meteor.users.findOne(sachaId);
-    
-    var MAT201Id = Courses.insert({
-	title: 'MAT 201',
-	userId: sacha._id,
-	username: sacha.profile.name,
-	submittedDate: now - 7 * 3600 * 1000,
-	tasksCount: 2
-    });
-    
-    Tasks.insert({
-	courseId: MAT201Id,
-	userId: tom._id,
-	username: tom.profile.name,
-	commits: [
-	    {
-		title: "HW 1",
-		userId: tom._id,
-		username: tom.profile.name,
-		submittedDate:  now - 6 * 3600 * 1000,
-		type: taskType.ASSIGNMENT,
-		dueDate:  now + 24*7 * 3600 * 1000,
-		percentOfGrade: 2
-	    }
-	]
-	
-    });
-    
-    Tasks.insert({
-	courseId: MAT201Id,
-	userId: sacha._id,
-	username: sacha.profile.name,
-	commits: [
-	    {
-		title: "Test 1",
-		userId: sacha._id,
-		username: sacha.profile.name,
-		submittedDate:  now - 5.5 * 3600 * 1000,
-		type: taskType.TEST,
-		dueDate:  now + 24*11 * 3600 * 1000,
-		percentOfGrade: 15
-	    }
-	]
-	
-    });
-    
-    Courses.insert({
-        title: 'ORF 245',
-        userId: tom._id,
-        username: tom.profile.name,
-        submittedDate: now - 4 * 3600 * 1000,
-	tasksCount: 0
-    });
-    
-    Courses.insert({
-	title: 'COS 126',
-	userId: sacha._id,
-	username: sacha.profile.name,
-	submittedDate: now - 2 * 3600 * 1000,
-	tasksCount: 0
-    });
-    
+    for (var i = 0; i < princetonCourses.length; i++) {
+	Courses.insert({
+	    title: princetonCourses[i],
+	    userId: "serverAdminID",
+	    username: "Server Admin",
+	    submittedDate: new Date().getTime(),
+	    tasksCount: 0,
+	    school: "Princeton University"
+	});
+    }
 }
-*/
+ 

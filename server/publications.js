@@ -1,3 +1,5 @@
+Houston.add_collection(Meteor.users);
+
 Meteor.publish('courses', function() {
     var user = Meteor.users.findOne(this.userId);
     var school;

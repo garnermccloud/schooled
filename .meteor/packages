@@ -13,7 +13,6 @@ accounts-ui-bootstrap-dropdown
 accounts-password
 
 iron-router-progress
-typeahead-js
 typeahead
 houston
 paginated-subscription
