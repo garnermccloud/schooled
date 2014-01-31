@@ -43,20 +43,27 @@ Template.taskEdit.events({
 	});
     },
     
-    'click .delete': function(e) {
+    'click .remove': function(e) {
 	e.preventDefault();
 	
-	if (confirm("Delete this task?")) {
+	if (confirm("Remove this task?")) {
 	    var currentTaskId = this._id;
-	    
+	    var courseId = this.courseId;
+
+	      
 	    Meteor.call('decrementTasksCount', this.courseId, function(error, courseId) {
 		if (error) {
 		    throwError(error.reason);
 		} else {
-		    Tasks.remove(currentTaskId);
-		    Router.go('coursePage', {_id: courseId});
+		    Meteor.call('invalidateTask', currentTaskId, function(error, taskId) {
+			if (error) {
+			    throwError(error.reason);
+			} else {
+			    Router.go('coursePage', {_id: courseId});
+			}
+		    });
 		}
-	    });
+	    });   
 	}
     }
 });

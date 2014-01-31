@@ -22,6 +22,7 @@ Meteor.methods({
 	task = {
 	    userId: user._id,
 	    courseId: taskAttributes.courseId,
+	    valid: true,
 	    commits: [
 		{
 		    title: taskAttributes.title,
@@ -65,6 +66,32 @@ Meteor.methods({
             
         // update the tasks
          return Tasks.update({_id: taskAttributes._id}, {$push: {commits: commit} } );
+    },
+    
+    invalidateTask: function(taskId) {
+	 var user = Meteor.user();
+
+        // ensure the user is logged in
+        if (!user)
+            throw new Meteor.Error(401, "You need to login to add tasks");
+
+        if (!taskId)
+            throw new Meteor.Error(422, 'There is no taskId');
+
+	return Tasks.update({_id: taskId}, { $set: { valid: false} });
+    },
+
+     validateTask: function(taskId) {
+         var user = Meteor.user();
+
+        // ensure the user is logged in
+        if (!user)
+            throw new Meteor.Error(401, "You need to login to add tasks");
+
+        if (!taskId)
+            throw new Meteor.Error(422, 'There is no taskId');
+
+        return Tasks.update({_id: taskId}, { $set: { valid: true} });
     }
 
 
