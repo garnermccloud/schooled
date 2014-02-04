@@ -17,7 +17,7 @@ Template.task.helpers({
     },
     taskUsername: function() {
         var newestIndex = this.commits.length - 1;
-        return this.commits[newestIndex].username;
+        return this.commits[newestIndex].email;
     },
 
     

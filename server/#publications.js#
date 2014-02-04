@@ -23,7 +23,7 @@ Meteor.publish('tasks', function() {
     } else {
 	courses = [];
     }
-    //console.log("courses = " + courses)
+    console.log("courses = " + courses)
     return Tasks.find({courseId: { $in: courses} });
 });
 

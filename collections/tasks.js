@@ -22,15 +22,15 @@ Meteor.methods({
 	task = {
 	    userId: user._id,
 	    courseId: taskAttributes.courseId,
-	    valid: true,
 	    commits: [
 		{
 		    title: taskAttributes.title,
 		    userId: user._id,
-		    username: user.emails[0].address,
+		    email: user.emails[0].address,
 		    submittedDate: new Date().getTime(),
 		    dueDate: taskAttributes.dueDate,
 		    notes: taskAttributes.notes,
+		    valid: true
 		}	    
 	    ]
 	}
@@ -52,15 +52,18 @@ Meteor.methods({
             throw new Meteor.Error(422, 'Please give task a due date');
 
 
-
+	 var task = Tasks.findOne({_id: taskAttributes._id});
+	 
+	 var valid = task.commits[task.commits.length - 1].valid;
         
         var commit = {
             title: taskAttributes.title,
             userId: user._id,
-            username: user.emails[0].address,
+            email: user.emails[0].address,
             submittedDate: new Date().getTime(),
             dueDate: taskAttributes.dueDate,
 	    notes: taskAttributes.notes,
+	    valid: valid
         };
 
             
@@ -78,7 +81,16 @@ Meteor.methods({
         if (!taskId)
             throw new Meteor.Error(422, 'There is no taskId');
 
-	return Tasks.update({_id: taskId}, { $set: { valid: false} });
+	var task = Tasks.findOne({_id: taskId});
+
+	var commit =  task.commits[task.commits.length - 1];
+
+	commit.valid = !commit.valid;
+
+
+        // update the tasks
+         return Tasks.update({_id: task._id}, {$push: {commits: commit} } );
+
     },
 
      validateTask: function(taskId) {
@@ -91,8 +103,17 @@ Meteor.methods({
         if (!taskId)
             throw new Meteor.Error(422, 'There is no taskId');
 
-        return Tasks.update({_id: taskId}, { $set: { valid: true} });
-    }
+	 var task = Tasks.findOne({_id: taskId});
+	 
+         var commit =  task.commits[task.commits.length - 1];
+	 
+         commit.valid = !commit.valid;
+
+	 
+         // update the tasks
+         return Tasks.update({_id: task._id}, {$push: {commits: commit} } );
+	 
+     }
 
 
 

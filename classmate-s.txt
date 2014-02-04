@@ -1,0 +1,102 @@
+2014-01-31T20:16:29.600786+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:16:29.600786+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:16:37.883489+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/ host=classmate-s.herokuapp.com request_id=5ea4ff38-eb58-4b77-9dc8-b6dce18fb1d4 fwd="207.38.135.155" dyno=web.1 connect=22ms service=30039ms status=503 bytes=0
+2014-01-31T20:16:41.919235+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/websocket host=classmate-s.herokuapp.com request_id=52b1d85f-1215-464c-bb79-831193d5f33c fwd="207.38.135.155" dyno=web.1 connect=1ms service=96000ms status=503 bytes=383227
+2014-01-31T20:16:51.379581+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:16:51.379675+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:17:13.527749+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:17:13.527749+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:17:17.342286+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/websocket host=classmate-s.herokuapp.com request_id=2ece3c40-1b3e-4695-94e4-0fc345fd639a fwd="207.38.135.155" dyno=web.1 connect=2ms service=30008ms status=503 bytes=0
+2014-01-31T20:17:35.647994+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:17:35.647762+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:17:57.420539+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:17:57.420663+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:18:41.776286+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:18:41.776286+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:19:03.430343+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:19:03.430472+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:19:25.552801+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:19:25.552801+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:19:29.183808+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/websocket host=classmate-s.herokuapp.com request_id=c4c915d0-4f8e-4871-a01c-152e92c97fa4 fwd="207.38.135.155" dyno=web.1 connect=1ms service=126223ms status=503 bytes=383125
+2014-01-31T20:19:47.685145+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:19:47.685263+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:20:09.472621+00:00 heroku[web.1]: Process running mem=512M(100.2%)
+2014-01-31T20:20:09.472717+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:20:31.602989+00:00 heroku[web.1]: Process running mem=513M(100.2%)
+2014-01-31T20:20:31.603247+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:20:53.378121+00:00 heroku[web.1]: Process running mem=513M(100.2%)
+2014-01-31T20:20:53.378251+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:21:15.502776+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:21:15.502629+00:00 heroku[web.1]: Process running mem=513M(100.2%)
+2014-01-31T20:21:37.618514+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:21:37.618375+00:00 heroku[web.1]: Process running mem=513M(100.2%)
+2014-01-31T20:21:58.358511+00:00 heroku[web.1]: State changed from up to starting
+2014-01-31T20:21:59.399598+00:00 heroku[web.1]: Process running mem=513M(100.2%)
+2014-01-31T20:21:59.399725+00:00 heroku[web.1]: Error R14 (Memory quota exceeded)
+2014-01-31T20:22:00.561364+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-01-31T20:22:02.601510+00:00 heroku[web.1]: Process exited with status 143
+2014-01-31T20:22:04.990887+00:00 heroku[web.1]: Starting process with command `.meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js`
+2014-01-31T20:22:06.021176+00:00 app[web.1]: This version of Meteor contains a patch for a bug in Node v0.10.
+2014-01-31T20:22:06.021502+00:00 app[web.1]: The patch is against only versions 0.10.22 through 0.10.24.
+2014-01-31T20:22:06.021547+00:00 app[web.1]: You are using version v0.10.25 instead, so we cannot apply the patch.
+2014-01-31T20:22:06.021547+00:00 app[web.1]: To mitigate the most common effect of the bug, websockets will be disabled.
+2014-01-31T20:22:06.021547+00:00 app[web.1]: To enable websockets, use Node v0.10.22 through v0.10.24, or upgrade to a later version of Meteor (if available).
+2014-01-31T20:22:06.662499+00:00 app[web.1]: LISTENING
+2014-01-31T20:22:22.204967+00:00 heroku[web.1]: State changed from up to starting
+2014-01-31T20:22:24.586768+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-01-31T20:22:25.935944+00:00 heroku[web.1]: Starting process with command `.meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js`
+2014-01-31T20:22:26.529155+00:00 heroku[web.1]: Process exited with status 143
+2014-01-31T20:22:27.066992+00:00 app[web.1]: This version of Meteor contains a patch for a bug in Node v0.10.
+2014-01-31T20:22:27.067925+00:00 app[web.1]: To enable websockets, use Node v0.10.22 through v0.10.24, or upgrade to a later version of Meteor (if available).
+2014-01-31T20:22:27.067856+00:00 app[web.1]: To mitigate the most common effect of the bug, websockets will be disabled.
+2014-01-31T20:22:27.067477+00:00 app[web.1]: The patch is against only versions 0.10.22 through 0.10.24.
+2014-01-31T20:22:27.067761+00:00 app[web.1]: You are using version v0.10.25 instead, so we cannot apply the patch.
+2014-01-31T20:22:29.152227+00:00 app[web.1]: LISTENING
+2014-01-31T20:22:29.684040+00:00 heroku[web.1]: State changed from starting to up
+2014-01-31T20:22:31.340343+00:00 heroku[router]: at=info method=GET path=/ host=classmate-s.herokuapp.com request_id=9d43ba00-d684-4b0d-b27c-99dd3099ffe3 fwd="207.38.135.155" dyno=web.1 connect=6ms service=25ms status=200 bytes=509
+2014-01-31T20:22:32.012214+00:00 heroku[router]: at=info method=GET path=/2302c4a53b2465fe82382103aa26b96e56566c59.js host=classmate-s.herokuapp.com request_id=e5674641-eb63-4bf6-90c9-0a276b4a7da5 fwd="207.38.135.155" dyno=web.1 connect=3ms service=7ms status=304 bytes=0
+2014-01-31T20:22:33.595392+00:00 heroku[router]: at=info method=GET path=/sockjs/info?cb=ih0bfbgshn host=classmate-s.herokuapp.com request_id=3d5dee7b-11f9-43dc-bb87-ce9f27717947 fwd="207.38.135.155" dyno=web.1 connect=7ms service=12ms status=200 bytes=91
+2014-01-31T20:22:33.816165+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=161526ca-71e0-49b3-b631-c1bb1d2848bb fwd="207.38.135.155" dyno=web.1 connect=2ms service=6ms status=200 bytes=12
+2014-01-31T20:22:34.092265+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr_send host=classmate-s.herokuapp.com request_id=4b9f4d6f-54ef-4ebd-8558-774f64407abe fwd="207.38.135.155" dyno=web.1 connect=10ms service=22ms status=204 bytes=0
+2014-01-31T20:22:34.658711+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=6ebc7c70-4f08-49ed-b008-7198200f9f37 fwd="207.38.135.155" dyno=web.1 connect=1ms service=195ms status=200 bytes=358952
+2014-01-31T20:22:41.709876+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=af665b75-cd08-485d-9c92-8cbe68b5026f fwd="207.38.135.155" dyno=web.1 connect=1ms service=4106ms status=200 bytes=369
+2014-01-31T20:22:41.823612+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=8adc4721-b030-4d90-b4d7-3038d24fc33a fwd="207.38.135.155" dyno=web.1 connect=4ms service=12ms status=200 bytes=432
+2014-01-31T20:22:44.824409+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=69.67MB sample#memory_rss=69.67MB sample#memory_cache=0.00MB sample#memory_swap=0.00MB sample#memory_pgpgin=0pages sample#memory_pgpgout=20564pages
+2014-01-31T20:22:46.635580+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=af9b075e-9f17-413c-972c-1a159d940ab0 fwd="207.38.135.155" dyno=web.1 connect=3ms service=4498ms status=200 bytes=92
+2014-01-31T20:22:47.044059+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=5b1259a1-ce43-4bd6-b2a2-7ee197a70655 fwd="207.38.135.155" dyno=web.1 connect=6ms service=5ms status=200 bytes=143
+2014-01-31T20:23:06.086640+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=72.33MB sample#memory_rss=72.32MB sample#memory_cache=0.00MB sample#memory_swap=0.00MB sample#memory_pgpgin=0pages sample#memory_pgpgout=21244pages
+2014-01-31T20:23:10.694970+00:00 heroku[router]: at=error code=H18 desc="Request Interrupted" method=GET path=/websocket host=classmate-s.herokuapp.com request_id=a9b90846-fa44-4672-8291-75ea681eb04e fwd="207.38.135.155" dyno=web.1 connect=14ms service=0ms status=503 bytes=0 sock=client
+2014-01-31T20:23:12.267958+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=c0fbe784-fc56-494c-841b-f76771998de4 fwd="207.38.135.155" dyno=web.1 connect=2ms service=25005ms status=200 bytes=12
+2014-01-31T20:23:26.777233+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#load_avg_1m=0.00
+2014-01-31T20:23:26.777844+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=76.09MB sample#memory_rss=76.09MB sample#memory_cache=0.00MB sample#memory_swap=0.00MB sample#memory_pgpgin=0pages sample#memory_pgpgout=22716pages
+2014-01-31T20:22:34.294536+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr_send host=classmate-s.herokuapp.com request_id=8ee4665e-0ebe-46d6-82e4-38ff728ce68e fwd="207.38.135.155" dyno=web.1 connect=2ms service=18ms status=204 bytes=0
+2014-01-31T20:23:37.377458+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=bcf9cb29-d43d-4f2e-9384-8471f25d9336 fwd="207.38.135.155" dyno=web.1 connect=12ms service=25013ms status=200 bytes=12
+2014-01-31T20:23:48.284714+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#load_avg_1m=0.00
+2014-01-31T20:23:48.285088+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=76.63MB sample#memory_rss=76.62MB sample#memory_cache=0.00MB sample#memory_swap=0.00MB sample#memory_pgpgin=0pages sample#memory_pgpgout=22853pages
+2014-01-31T20:22:41.683875+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr_send host=classmate-s.herokuapp.com request_id=7ecd1b49-64e1-4e0a-8e5e-f70b6a05754d fwd="207.38.135.155" dyno=web.1 connect=3ms service=8ms status=204 bytes=0
+2014-01-31T20:24:03.479908+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=7d9746e7-0311-4fe9-b5bd-f1c84b95db40 fwd="207.38.135.155" dyno=web.1 connect=3ms service=25027ms status=200 bytes=12
+2014-01-31T20:24:09.105467+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#load_avg_1m=0.00
+2014-01-31T20:24:09.105805+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=77.92MB sample#memory_rss=77.91MB sample#memory_cache=0.00MB sample#memory_swap=0.00MB sample#memory_pgpgin=0pages sample#memory_pgpgout=23691pages
+2014-01-31T20:24:22.619140+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path=/websocket host=classmate-s.herokuapp.com request_id=6b0abb72-ea48-4d4a-9cb1-cc0727b69fc3 fwd="207.38.135.155" dyno=web.1 connect=1ms service=71866ms status=503 bytes=314241
+2014-01-31T20:24:29.233968+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=8f58a4de-f328-4410-b38b-b7fb8414a791 fwd="207.38.135.155" dyno=web.1 connect=2ms service=25039ms status=200 bytes=12
+2014-01-31T20:24:29.783999+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#load_avg_1m=0.00
+2014-01-31T20:24:29.784298+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=78.40MB sample#memory_rss=78.39MB sample#memory_cache=0.00MB sample#memory_swap=0.00MB sample#memory_pgpgin=0pages sample#memory_pgpgout=23814pages
+2014-01-31T20:22:06.789508+00:00 heroku[web.1]: State changed from starting to up
+2014-01-31T20:22:46.637958+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr_send host=classmate-s.herokuapp.com request_id=ad861e96-8eaa-4f90-9a5e-de3c4a1f9d15 fwd="207.38.135.155" dyno=web.1 connect=2ms service=7ms status=204 bytes=0
+2014-01-31T20:24:51.477569+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=228.78MB sample#memory_rss=228.77MB sample#memory_cache=0.00MB sample#memory_swap=0.01MB sample#memory_pgpgin=0pages sample#memory_pgpgout=72443pages
+2014-01-31T20:24:51.477323+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#load_avg_1m=0.61
+2014-01-31T20:25:10.305970+00:00 heroku[router]: at=error code=H18 desc="Request Interrupted" method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=6d866e54-05d3-4004-8bdb-40f692cee07c fwd="207.38.135.155" dyno=web.1 connect=1ms service=11426ms status=503 bytes=0 sock=client
+2014-01-31T20:25:11.795747+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#load_avg_1m=0.72
+2014-01-31T20:25:11.795951+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=487.88MB sample#memory_rss=487.85MB sample#memory_cache=0.00MB sample#memory_swap=0.03MB sample#memory_pgpgin=0pages sample#memory_pgpgout
+=154890pages
+2014-01-31T20:25:13.886469+00:00 heroku[router]: at=info method=GET path=/6eb52e93f35901d152a59cd2ccf037b3a383dca8.css host=classmate-s.herokuapp.com request_id=fb0d2fb4-14a0-49fb-a650-b3859c479315 fwd="207.38.135.155" dyno=web.1 connect=1ms service=55ms status=304 bytes=0
+2014-01-31T20:25:13.891802+00:00 heroku[router]: at=info method=GET path=/2302c4a53b2465fe82382103aa26b96e56566c59.js host=classmate-s.herokuapp.com request_id=a55f25d0-2597-4947-928e-a5f64fa7bca0 fwd="207.38.135.155" dyno=web.1 connect=1ms service=41ms status=304 bytes=0
+2014-01-31T20:24:55.733619+00:00 heroku[router]: at=info method=POST path=/sockjs/694/drd0nybd/xhr host=classmate-s.herokuapp.com request_id=3008eed3-d550-44b2-bd8f-1fced3256af1 fwd="207.38.135.155" dyno=web.1 connect=5ms service=25027ms status=200 bytes=12
+2014-01-31T20:25:24.151602+00:00 heroku[router]: at=error code=H18 desc="Request Interrupted" method=GET path=/sockjs/info?cb=67xv9qxfxy host=classmate-s.herokuapp.com request_id=0315a704-6f28-43a1-9bd2-2dcf5ff4d3bc fwd="207.38.135.155" dyno=web.1 connect=1ms service=6908ms status=503 bytes=0 sock=client
+2014-01-31T20:25:31.422028+00:00 heroku[router]: at=error code=H18 desc="Request Interrupted" method=GET path=/sockjs/info?cb=01c6ywbq34 host=classmate-s.herokuapp.com request_id=74502203-4bb1-4e72-b45c-7d4951b68d76 fwd="207.38.135.155" dyno=web.1 connect=1ms service=7242ms status=503 bytes=0 sock=client
+2014-01-31T20:25:33.338003+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=511.78MB sample#memory_rss=511.70MB sample#memory_cache=0.00MB sample#memory_swap=0.08MB sample#memory_pgpgin=141365248pages sample#memory_pgpgout=210334pages
+2014-01-31T20:25:33.338003+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#load_avg_1m=0.50
+2014-01-31T20:25:39.444211+00:00 heroku[router]: at=error code=H18 desc="Request Interrupted" method=GET path=/sockjs/info?cb=py6vwrvuie host=classmate-s.herokuapp.com request_id=741ac658-234f-4f87-b210-f29cc0cc008c fwd="207.38.135.155" dyno=web.1 connect=3ms service=7939ms status=503 bytes=0 sock=client
+2014-01-31T20:25:10.004399+00:00 heroku[router]: at=info method=GET path=/courses host=classmate-s.herokuapp.com request_id=32b60fe7-500f-4f44-bea6-b3526414e24c fwd="207.38.135.155" dyno=web.1 connect=8ms service=649ms status=200 bytes=509
+2014-01-31T20:25:54.213680+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#load_avg_1m=0.35
+2014-01-31T20:25:54.214127+00:00 heroku[web.1]: source=web.1 dyno=heroku.21766479.c71fbc6f-8438-4d62-95f0-3b7b6ebc7933 sample#memory_total=511.99MB sample#memory_rss=511.91MB sample#memory_cache=0.00MB sample#memory_swap=0.08MB sample#memory_pgpgin=141152256pages sample#memory_pgpgout=215990pages
